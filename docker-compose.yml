@@ -1,15 +1,18 @@
 version: '3.9'
 
 services:
+  # Define the PHP and Apache service
   php-apache:
     build: .
     ports:
+      # Expose_Port:Container_Port
       - 8080:80
     volumes:
       - ./app:/var/www/html
     depends_on:
       - mysql
 
+  # Define the MySQL service
   mysql:
     image: mysql:oraclelinux8
     environment:
@@ -18,18 +21,22 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: userpassword
     ports:
+      # Expose_Port:Container_Port
       - 3310:3306
     volumes:
       - mysql-data:/var/lib/mysql
 
+  # PHPMyAdmin Service
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     links:
+    # Links the PHPMyAdmin service to the MySQL database service
       - mysql
     ports:
       - 8081:80
     environment:
       PMA_HOST: mysql
+      # Use MySQL root password for PHPMyAdmin
       MYSQL_ROOT_PASSWORD: password
 
 volumes:
