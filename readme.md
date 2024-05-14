@@ -13,7 +13,7 @@
 
 <br />
 
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/AD_ET-Module)
+![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/AD_ET-Module-2)
 
 ---
 
@@ -46,18 +46,21 @@
 
 ## Overview
 
-This project serves as plasygound for sample coding of php fundamentals tackled in module 2. Demostrated the use case of conditionals, looping, session and etc.
+This project serves as playground for sample coding of php fundamentals tackled in module 3-4.
 
 <br />
 
 ### Key Components
-- PHP file as index
-- Fundamentals: Loop, Conditional
+- PHP user defined function
+- PHP system defined function
+- Array
+- Create, display and delete
 - Session
 
 ### Technology
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-913399?style=for-the-badge&logo=php&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-474A8A?style=for-the-badge&logo=php&logoColor=white)
+![BootStrap](https://img.shields.io/badge/Bootstrap-913399?style=for-the-badge&logo=php&logoColor=white)
 
 <div align="right">(<a href="#readme-top">back to top</a>)</div>
 
